@@ -1,0 +1,39 @@
+
+.container {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+.grid-wrapper {
+  display: flex;
+
+  background-color: #000;
+  padding: 0px;
+}
+.grid-wrapper > .grid {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  width: inherit;
+  height: inherit;
+}
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.snake {
+  background-color: blue;
+}
+
+.apple {
+  background-color: purple;
+}
+.cell {
+  border: 1px solid gray;
+  min-width: 20px;
+  min-height: 20px;
+
+  margin-right: 2px;
+}
